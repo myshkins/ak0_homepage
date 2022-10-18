@@ -81,7 +81,7 @@ nav {
 
 .nav-link-container {
     display: flex;
-    margin-left: auto;
+    margin-left: .5rem;
     align-items: flex-end;
 }
 
@@ -96,6 +96,10 @@ nav {
     border: 2px solid var(--text-color);
     border-radius: 3px;
     color: var(--text-color);
+}
+
+.logo-container {
+    margin-right: auto;
 }
 
 .logo-container img{
@@ -123,7 +127,6 @@ section {
 }
 
 .hero img {
-    justify-self: center;
     align-self: center;
     max-width: 40%;
     min-width: 150px;
@@ -190,7 +193,6 @@ section {
 }
 
 .skill-tag {
-    flex;
     border-radius: 4px;
     color: black;
     padding: .5rem;
