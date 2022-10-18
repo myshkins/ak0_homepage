@@ -109,12 +109,16 @@ nav {
 
 section {
     padding: 4rem;
+    display: flex;
+    justify-content: center;
 }
-.hero {
+
+.hero-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-template-rows: 2fr 4rem;
-    margin: 8rem 4rem 0;
+    margin: 8rem 4rem 4rem;
+    width: clamp(40rem, 60vw, 60rem);
     text-align: center;
 }
 
@@ -142,10 +146,13 @@ section {
 }
 
 .about-me {
-    display: grid;
     background-color: var(--about-me-bg-color);
+}
+.about-me-container {
+    display: grid;
     grid-template-columns: repeat(5, minmax(50px, 1fr));
     grid-template-rows: 4rem 1fr;
+    width: clamp(60rem, 70vw, 90rem);
 }
 
 .about-me-header {
