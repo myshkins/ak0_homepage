@@ -5,6 +5,9 @@
     --nav-link-color: rgb(55, 67, 95);
     --btn-bg-color: transparent;
     --about-me-bg-color:rgb(86, 87, 87);
+    --skills-tag-back-bg-color: rgb(236, 199, 143);
+    --skills-tag-front-bg-color: rgb(192, 137, 206);
+    --skills-tag-bg-color: rgb(156, 156, 156);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -78,8 +81,10 @@ nav {
 
 .nav-link-container {
     display: flex;
+    margin-left: auto;
     align-items: flex-end;
 }
+
 .nav-link {
     font-style: normal;
     color: var(--text-color);
@@ -103,9 +108,9 @@ section {
 }
 .hero {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
-    margin: 8rem 8rem 0;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 2fr 4rem;
+    margin: 8rem 4rem 0;
     text-align: center;
 }
 
@@ -114,13 +119,15 @@ section {
     align-self: end;
     margin-bottom: 2rem;
     grid-area: 1 / 1 / 2 / 3;
+    white-space: nowrap;
 }
 
 .hero img {
     justify-self: center;
     align-self: center;
-    max-width: 70%;
-    grid-area: 1 / 3 / 2 / 4;
+    max-width: 40%;
+    min-width: 150px;
+    grid-area: 1 / 3 / 3 / 4;
 }
 
 .hero p {
@@ -128,12 +135,13 @@ section {
     font-size: 2rem;
     font-style: italic;
     grid-area: 2 / 1 / 3 / 3;
+    white-space: nowrap;
 }
 
 .about-me {
     display: grid;
     background-color: var(--about-me-bg-color);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
     grid-template-rows: 4rem 1fr;
 }
 
@@ -157,11 +165,42 @@ section {
     grid-area: 2 / 4 / 4 / 6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+}
+
+.skills-back-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill-break {
+    flex-basis: 100%;
+    height: 0;
+}
+.skill-tag {
+    border-radius: 4px;
+    color: black;
+    padding: .5rem;
+    text-align: center;
+    align-content: center;
+    margin: .25rem;
+    max-width: fit-content;
+    background-color: var(--skills-tag-bg-color);
+}
+
+
+.skill-tag.header.back {
+    background-color: var(--skills-tag-back-bg-color);
+    margin-right: auto;
+}
+
+.skill-tag.header.front {
+    background-color: var(--skills-tag-front-bg-color);
 }
 
 .projects {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
