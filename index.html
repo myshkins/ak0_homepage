@@ -15,11 +15,9 @@
         <div class="logo-container">
             <img src="/static/logo-no-background.png" alt="a logo with the letters 'ak'">
         </div>
-        <div class="nav-link-container"><a href="https://www.ak0.io" class="nav-link">about</a></div>
-        <div class="nav-link-container"><a href="https://www.ak0.io" class="nav-link">projects</a></div>
+        <div class="nav-link-container"><a href="#projects" class="nav-link">projects</a></div>
         <div class="nav-link-container"><a href="https://www.ak0.io" class="nav-link">blog</a></div>
         <div class="nav-link-container"><a href="https://www.ak0.io" class="nav-link">contact</a></div>
-        <div class="nav-link-container"><a href="https://www.ak0.io" class="nav-link">experience</a></div>
         <div class="nav-link-container">
             <button id="btn-resume">resume</button>
         </div>
@@ -41,7 +39,9 @@
                 software engineer. Here you can find a collection of projects
                 that I've created. I get a lot of joy out of making new things
                 and learning new things, and I'm continuously looking to learn
-                more. So let me know if you like anything that you see!</p>
+                more. So let me know if you like anything that you see! Click
+                on the links below to see the apps where they are hosted.
+            </p>
             <div class="skills-container">
                 <div class="skills-back-container">
                     <div class="skill-tag header back">backend</div>
@@ -73,48 +73,84 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects-container">
             <h2>projects</h2>
+            <div><hr></div>
             <div class="project-wrap">
                 <a href="https://www.pet-watch.ak0.io">
                     <img src="static/img/screenshot-temp.jpg" alt="screenshot of temp-stat web app">
                 </a>
                 <div class="project-description">
-                    <a href="https://www.etch.ak0.io">
+                    <a href="https://pet-watch.ak0.io">
                         <h3>Pet-Watch</h3>
                     </a>
                     <p>The inspiration for this project came from Chancho the
                         chinchilla. He's a 15 year old chinchilla who is very
                         particular about the climate around him. Chinchillas
-                        generally don't tolerate temperatures outside the range of
-                        60-75 degrees Farenheit. Thus, I created this app as a way
-                        to monitor the temperature of my apartment when I'm away.
+                        generally don't tolerate temperatures outside the range
+                        of 60-75 degrees Farenheit. Thus, I created this app as
+                        a way to monitor the temperature of my apartment when
+                        I'm away.
                     </p>
                     <br>
                     <p>
-                        I used a Raspberry Pi with a temperature sensor to get 
-                        the temperature data, which is then posted to my database
-                        via my api. The app then pulls the data to render a 
-                        webpage with a view of the data. The tech stack includes Flask, 
-                        Postgres, MySQLAlchemy, Docker, Gunicorn, and Nginx. 
-                        It's deployed on my personal VPS. Click to see the app, 
-                        or the Github repo for this project.
-                </p>
+                        I used a Raspberry Pi with a temperature sensor to get
+                        the temperature data, which is then posted to my
+                        database via my api. The app then pulls the data to
+                        render a webpage with a view of the data. The tech stack
+                        includes Flask, Postgres, MySQLAlchemy, Docker,
+                        Gunicorn, and Nginx. It's deployed on my personal VPS.
+                        Click <a href="https://pet-watch.ak0.io">here</a> to see
+                        the app, or the
+                        <a href="https://github.com/myshkins/pet_watch">Github repo</a>
+                        for this project.
+                    </p>
                 </div>
             </div>
+            <div><hr></div>
             <div class="project-wrap">
                 <a href="https://www.etch.ak0.io">
                     <img src="static/img/screenshot-etch.jpg" alt="screenshot of etch-a-sketch web app">
                 </a>
-                <a href="https://www.etch.ak0.io">etch-a-sketch</a>
+                <div class="project-description">
+                    <a href="https://www.etch.ak0.io">
+                        <h3>Etch-a-Sketch</h3>
+                    </a>
+                    <p>Here is a fun little drawing app created with JavaScript,
+                        CSS, and HTML. In this app a user only needs to move
+                        their mouse to draw on the screen. Users can also choose
+                        the dimensions of the grid (ie. the resolution), as well
+                        as the color of the pen. Clicking the rainbow button
+                        allows the pen or the grid to be drawn in a rainbow of
+                        colors. Click <a href="https://etch.ak0.io">here</a> to see the
+                        app or the
+                        <a href="https://github.com/myshkins/etch_sketch">Github repo</a>.
+                    </p>
+                </div>
             </div>
+            <div><hr></div>
             <div class="project-wrap">
                 <a href="https://www.calc.ak0.io">
                     <img src="static/img/screenshot-calc.jpg" alt="screenshot of calculator web app">
                 </a>
-                <a href="https://www.calc.ak0.io">calculator</a>
+                <div class="project-description">
+                    <a href="https://www.calc.ak0.io">
+                        <h3>Calculator</h3>
+                    </a>
+                    <p>You know those times when you have to add or subtract or,
+                        god forbid, multiply some big numbers. What a pain! Well
+                        fear no more! This calculator does it all. Add,
+                        subtract, multiply, divide, or even modulo of an number
+                        you can think of. So next time you have a tough math
+                        problem, try out my calculator solution! Written in
+                        Javascript, HTML, and CSS. See the app
+                        <a href="https://calc.ak0.io">here</a> and the repo
+                        <a href="https://github.com/myshkins/js_calculator">here</a>.
+                    </p>
+                </div>
             </div>
+            <div><hr></div>
         </div>
     </section>
 
