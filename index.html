@@ -35,8 +35,13 @@
         <div class="about-me-container">
             <h2 class="about-me-header">about me</h2>
             <h2 class="skills-header">skills</h2>
-            <p>Here's some stuff about me. I like to code just all day everyday. I used to be a teacher at a public school
-                in Brooklyn, NY. I love building things, and I love learning things.</p>
+            <p>Hey, I'm Alex Krenitsky, a NYC public school teacher turned
+                software developer. Though teaching is a great profession, I
+                found that I can have a much greater impact on the world as a
+                software engineer. Here you can find a collection of projects
+                that I've created. I get a lot of joy out of making new things
+                and learning new things, and I'm continuously looking to learn
+                more. So let me know if you like anything that you see!</p>
             <div class="skills-container">
                 <div class="skills-back-container">
                     <div class="skill-tag header back">backend</div>
@@ -63,6 +68,7 @@
                     <div class="skill-tag">Git</div>
                     <div class="skill-spacer"></div>
                     <div class="skill-spacer"></div>
+                    <div class="skill-spacer"></div>
                 </div>
             </div>
         </div>
@@ -71,10 +77,31 @@
         <div class="projects-container">
             <h2>projects</h2>
             <div class="project-wrap">
-                <a href="https://www.etch.ak0.io">
+                <a href="https://www.pet-watch.ak0.io">
                     <img src="static/img/screenshot-temp.jpg" alt="screenshot of temp-stat web app">
                 </a>
-                <a href="https://www.etch.ak0.io">home-stat</a>
+                <div class="project-description">
+                    <a href="https://www.etch.ak0.io">
+                        <h3>Pet-Watch</h3>
+                    </a>
+                    <p>The inspiration for this project came from Chancho the
+                        chinchilla. He's a 15 year old chinchilla who is very
+                        particular about the climate around him. Chinchillas
+                        generally don't tolerate temperatures outside the range of
+                        60-75 degrees Farenheit. Thus, I created this app as a way
+                        to monitor the temperature of my apartment when I'm away.
+                    </p>
+                    <br>
+                    <p>
+                        I used a Raspberry Pi with a temperature sensor to get 
+                        the temperature data, which is then posted to my database
+                        via my api. The app then pulls the data to render a 
+                        webpage with a view of the data. The tech stack includes Flask, 
+                        Postgres, MySQLAlchemy, Docker, Gunicorn, and Nginx. 
+                        It's deployed on my personal VPS. Click to see the app, 
+                        or the Github repo for this project.
+                </p>
+                </div>
             </div>
             <div class="project-wrap">
                 <a href="https://www.etch.ak0.io">
