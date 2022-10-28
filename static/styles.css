@@ -230,7 +230,7 @@ section h2 {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4rem repeat(6, min-content);
+    grid-template-rows: 4rem repeat(8, min-content);
     width: clamp(60rem, 70vw, 90rem);
     grid-auto-flow: column;
     gap: 2px;
