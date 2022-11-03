@@ -2,7 +2,7 @@
     --bg-color: rgb(57, 58, 58);
     --nav-bg-color: rgb(30, 31, 31);
     --text-color: rgb(195, 231, 247);
-    --nav-link-color: rgb(55, 67, 95);
+    --nav-link-color: rgb(158, 126, 233);
     --btn-bg-color: transparent;
     --about-me-border-color:rgb(88, 68, 134);
     --skills-tag-back-bg-color: rgb(236, 199, 143);
@@ -90,15 +90,16 @@ nav {
 
 .nav-link {
     font-style: normal;
-    color: var(--text-color);
+    color: var(--nav-link-color);
     font-size: 1.5rem;
+    margin-right: 2rem;
 }
 
 #btn-resume {
     background-color: var(--btn-bg-color);
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--nav-link-color);
     border-radius: 3px;
-    color: var(--text-color);
+    color: var(--nav-link-color);
 }
 
 .logo-container {
