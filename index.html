@@ -9,13 +9,14 @@
     <meta name="description"
         content="Alex Krenitsky is a software engineer. This is his professional softwared development portfolio. Including projects using Python, Javascript, Flask, Postgres, Pandas, Beautiful Soup, Selenium, Git, Postman, API, web, backend, frontend, webpack, react, npm, sqlalchemy, html, css, ">
     <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/blogger-sans-bold-otf" type="text/css"/> 
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon.ico">
 </head>
 
 <body>
     <nav>
         <div class="logo-container">
-            <img src="/static/logo-no-background.png" alt="a logo with the letters 'ak'">
+            <img src="/static/logo-no-background.png" alt="a logo with the letters 'a', and 'k'">
         </div>
         <div class="nav-link-container"><a href="#projects" class="nav-link">projects</a></div>
         <div class="nav-link-container"><a href="https://blog.ak0.io" class="nav-link">blog</a></div>
@@ -26,166 +27,174 @@
             </a>
         </div>
     </nav>
-    <section class="hero">
-        <div class="hero-container">
-            <h1>Hi I'm Alex</h1>
-            <img src="/static/img/selfie.png" alt="a selfie pic">
-            <p>I think making stuff is really neato</p>
+    <div class="content-container">
+        <div class="sections-container">
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-text-wrap">
+                        <h1>Hey, I'm Alex</h1>
+                        <p>I think making stuff is really neato</p>
+                    </div>
+                    <img src="/static/img/pixel-selfie.png" alt="a selfie pic">
+                </div>
+            </section>
+            <section class="about-me">
+                <div class="about-me-container">
+                    <h2 class="about-me-header">about me</h2>
+                    <h2 class="skills-header">skills</h2>
+                    <p>Hey, I'm Alex Krenitsky, a NYC public school teacher turned
+                        software developer. Though teaching is a great profession, I
+                        found that I can have a much greater impact on the world as a
+                        software engineer. Here you can find a collection of projects
+                        that I've created. I get a lot of joy out of making new things
+                        and learning new things, and I'm continuously looking to learn
+                        more. So let me know if you like anything that you see! Click
+                        on the links below to see the apps where they are hosted.
+                    </p>
+                    <div class="skills-container">
+                        <div class="skills-back-container">
+                            <div class="skill-tag header back">backend</div>
+                            <div class="skill-break"></div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Flask</div>
+                            <div class="skill-tag">Postgres</div>
+                            <div class="skill-tag">Postman</div>
+                            <div class="skill-tag">MySQLAlchemy</div>
+                            <div class="skill-tag">Pandas</div>
+                            <div class="skill-tag">Selenium</div>
+                            <div class="skill-tag">Beautiful Soup</div>
+                            <div class="skill-tag">Matplotlib</div>
+                            <div class="skill-spacer"></div>
+                            <div class="skill-spacer"></div>
+                        </div>
+                        <div class="skills-front-container">
+                            <div class="skill-tag header front">frontend</div>
+                            <div class="skill-break"></div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">HTML</div>
+                            <div class="skill-tag">CSS</div>
+                            <div class="skill-tag">React</div>
+                            <div class="skill-tag">Webpack</div>
+                            <div class="skill-tag">Jest</div>
+                            <div class="skill-tag">Git</div>
+                            <div class="skill-spacer"></div>
+                            <div class="skill-spacer"></div>
+                            <div class="skill-spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="projects-container">
+                    <h2>projects</h2>
+                    <a id="projects" class="anchor"></a>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="project-wrap">
+                        <a href="https://www.pet-watch.ak0.io">
+                            <img src="static/img/screenshot-temp.jpg" alt="screenshot of temp-stat web app">
+                        </a>
+                        <div class="project-description">
+                            <a href="https://pet-watch.ak0.io">
+                                <h3>Pet-Watch</h3>
+                            </a>
+                            <p>The inspiration for this project came from Chancho the
+                                chinchilla. He's a 15 year old chinchilla who is very
+                                particular about the climate around him. Chinchillas
+                                generally don't tolerate temperatures outside the range
+                                of 60-75 degrees Farenheit. Thus, I created this app as
+                                a way to monitor the temperature of my apartment when
+                                I'm away.
+                            </p>
+                            <br>
+                            <p>
+                                I used a Raspberry Pi with a temperature sensor to get
+                                the temperature data, which is then posted to my
+                                database via my api. The app then pulls the data to
+                                render a webpage with a view of the data. The tech stack
+                                includes Flask, Postgres, MySQLAlchemy, Docker,
+                                Gunicorn, and Nginx. It's deployed on my personal VPS.
+                                Click <a href="https://pet-watch.ak0.io">here</a> to see
+                                the app, or the
+                                <a href="https://github.com/myshkins/pet_watch">Github repo</a>
+                                for this project.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="project-wrap">
+                        <a href="https://www.etch.ak0.io">
+                            <img src="static/img/screenshot-etch.jpg" alt="screenshot of etch-a-sketch web app">
+                        </a>
+                        <div class="project-description">
+                            <a href="https://www.etch.ak0.io">
+                                <h3>Etch-a-Sketch</h3>
+                            </a>
+                            <p>Here is a fun little drawing app created with JavaScript,
+                                CSS, and HTML. In this app a user only needs to move
+                                their mouse to draw on the screen. Users can also choose
+                                the dimensions of the grid (ie. the resolution), as well
+                                as the color of the pen. Clicking the rainbow button
+                                allows the pen or the grid to be drawn in a rainbow of
+                                colors. Click <a href="https://etch.ak0.io">here</a> to see the
+                                app or the
+                                <a href="https://github.com/myshkins/etch_sketch">Github repo</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="project-wrap">
+                        <a href="https://www.tic-tac.ak0.io">
+                            <img src="static/img/screenshot-tic-tac.jpg" alt="screenshot of tic tac toe web app">
+                        </a>
+                        <div class="project-description">
+                            <a href="https://www.tic-tac.ak0.io">
+                                <h3>Tic-Tac-Toe</h3>
+                            </a>
+                            <p>It's a classic! Written in Javascript, HTML, and CSS.
+                                This was an exercise in writing factory functions. Check
+                                out the code at the
+                                <a href="https://github.com/myshkins/tic_tac_toe">Github repo</a>
+                                to see what I'm talking about. And give it a play at the
+                                <a href="https://tic-tac.ak0.io">site</a>!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="project-wrap">
+                        <a href="https://www.calc.ak0.io">
+                            <img src="static/img/screenshot-calc.jpg" alt="screenshot of calculator web app">
+                        </a>
+                        <div class="project-description">
+                            <a href="https://www.calc.ak0.io">
+                                <h3>Calculator</h3>
+                            </a>
+                            <p>You know those times when you have to add or subtract or,
+                                god forbid, multiply some big numbers. What a pain! Well
+                                fear no more! This calculator does it all. Add,
+                                subtract, multiply, divide, or even modulo of any number
+                                you can think of. So next time you have a tough math
+                                problem, try out my calculator solution! Written in
+                                Javascript, HTML, and CSS. See the app
+                                <a href="https://calc.ak0.io">here</a> and the repo
+                                <a href="https://github.com/myshkins/js_calculator">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-    <section class="about-me">
-        <div class="about-me-container">
-            <h2 class="about-me-header">about me</h2>
-            <h2 class="skills-header">skills</h2>
-            <p>Hey, I'm Alex Krenitsky, a NYC public school teacher turned
-                software developer. Though teaching is a great profession, I
-                found that I can have a much greater impact on the world as a
-                software engineer. Here you can find a collection of projects
-                that I've created. I get a lot of joy out of making new things
-                and learning new things, and I'm continuously looking to learn
-                more. So let me know if you like anything that you see! Click
-                on the links below to see the apps where they are hosted.
-            </p>
-            <div class="skills-container">
-                <div class="skills-back-container">
-                    <div class="skill-tag header back">backend</div>
-                    <div class="skill-break"></div>
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">Flask</div>
-                    <div class="skill-tag">Postgres</div>
-                    <div class="skill-tag">Postman</div>
-                    <div class="skill-tag">MySQLAlchemy</div>
-                    <div class="skill-tag">Pandas</div>
-                    <div class="skill-tag">Selenium</div>
-                    <div class="skill-tag">Beautiful Soup</div>
-                    <div class="skill-tag">Matplotlib</div>
-                </div>
-                <div class="skills-front-container">
-                    <div class="skill-tag header front">frontend</div>
-                    <div class="skill-break"></div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">HTML</div>
-                    <div class="skill-tag">CSS</div>
-                    <div class="skill-tag">React</div>
-                    <div class="skill-tag">Webpack</div>
-                    <div class="skill-tag">Jest</div>
-                    <div class="skill-tag">Git</div>
-                    <div class="skill-spacer"></div>
-                    <div class="skill-spacer"></div>
-                    <div class="skill-spacer"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="projects-container">
-            <h2>projects</h2>
-            <a id="projects" class="anchor"></a>
-            <div>
-                <hr>
-            </div>
-            <div class="project-wrap">
-                <a href="https://www.pet-watch.ak0.io">
-                    <img src="static/img/screenshot-temp.jpg" alt="screenshot of temp-stat web app">
-                </a>
-                <div class="project-description">
-                    <a href="https://pet-watch.ak0.io">
-                        <h3>Pet-Watch</h3>
-                    </a>
-                    <p>The inspiration for this project came from Chancho the
-                        chinchilla. He's a 15 year old chinchilla who is very
-                        particular about the climate around him. Chinchillas
-                        generally don't tolerate temperatures outside the range
-                        of 60-75 degrees Farenheit. Thus, I created this app as
-                        a way to monitor the temperature of my apartment when
-                        I'm away.
-                    </p>
-                    <br>
-                    <p>
-                        I used a Raspberry Pi with a temperature sensor to get
-                        the temperature data, which is then posted to my
-                        database via my api. The app then pulls the data to
-                        render a webpage with a view of the data. The tech stack
-                        includes Flask, Postgres, MySQLAlchemy, Docker,
-                        Gunicorn, and Nginx. It's deployed on my personal VPS.
-                        Click <a href="https://pet-watch.ak0.io">here</a> to see
-                        the app, or the
-                        <a href="https://github.com/myshkins/pet_watch">Github repo</a>
-                        for this project.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div class="project-wrap">
-                <a href="https://www.etch.ak0.io">
-                    <img src="static/img/screenshot-etch.jpg" alt="screenshot of etch-a-sketch web app">
-                </a>
-                <div class="project-description">
-                    <a href="https://www.etch.ak0.io">
-                        <h3>Etch-a-Sketch</h3>
-                    </a>
-                    <p>Here is a fun little drawing app created with JavaScript,
-                        CSS, and HTML. In this app a user only needs to move
-                        their mouse to draw on the screen. Users can also choose
-                        the dimensions of the grid (ie. the resolution), as well
-                        as the color of the pen. Clicking the rainbow button
-                        allows the pen or the grid to be drawn in a rainbow of
-                        colors. Click <a href="https://etch.ak0.io">here</a> to see the
-                        app or the
-                        <a href="https://github.com/myshkins/etch_sketch">Github repo</a>.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div class="project-wrap">
-                <a href="https://www.tic-tac.ak0.io">
-                    <img src="static/img/screenshot-tic-tac.jpg" alt="screenshot of tic tac toe web app">
-                </a>
-                <div class="project-description">
-                    <a href="https://www.tic-tac.ak0.io">
-                        <h3>Tic-Tac-Toe</h3>
-                    </a>
-                    <p>It's a classic! Written in Javascript, HTML, and CSS.
-                        This was an exercise in writing factory functions. Check
-                        out the code at the
-                        <a href="https://github.com/myshkins/tic_tac_toe">Github repo</a>
-                        to see what I'm talking about. And give it a play at the
-                        <a href="https://tic-tac.ak0.io">site</a>!
-                    </p>
-                </div>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div class="project-wrap">
-                <a href="https://www.calc.ak0.io">
-                    <img src="static/img/screenshot-calc.jpg" alt="screenshot of calculator web app">
-                </a>
-                <div class="project-description">
-                    <a href="https://www.calc.ak0.io">
-                        <h3>Calculator</h3>
-                    </a>
-                    <p>You know those times when you have to add or subtract or,
-                        god forbid, multiply some big numbers. What a pain! Well
-                        fear no more! This calculator does it all. Add,
-                        subtract, multiply, divide, or even modulo of any number
-                        you can think of. So next time you have a tough math
-                        problem, try out my calculator solution! Written in
-                        Javascript, HTML, and CSS. See the app
-                        <a href="https://calc.ak0.io">here</a> and the repo
-                        <a href="https://github.com/myshkins/js_calculator">here</a>.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <hr>
-            </div>
-        </div>
-    </section>
+    </div>
 
 </body>
 

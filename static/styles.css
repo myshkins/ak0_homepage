@@ -1,16 +1,20 @@
 :root {
     --bg-color: rgb(57, 58, 58);
     --nav-bg-color: rgb(30, 31, 31);
-    --text-color: rgb(195, 231, 247);
-    --nav-link-color: rgb(158, 126, 233);
+    --text-color: rgb(247, 235, 195);
+    --nav-link-color: rgb(233, 187, 126);
     --btn-bg-color: transparent;
-    --about-me-border-color:rgb(88, 68, 134);
+    --hero-bg-color: rgb(175, 152, 115);
+    --hero-color: rgb(39, 50, 66);
+    --about-me-border-color:rgb(233, 187, 126);
     --skills-tag-back-bg-color: rgb(236, 199, 143);
     --skills-tag-front-bg-color: rgb(192, 137, 206);
     --skills-tag-bg-color: rgb(156, 156, 156);
     --project-title-color: rgb(126, 181, 202);
     --project-desc-color: rgb(195, 231, 247);
     --link-color: rgb(61, 183, 253);
+    --section-border-rad: 6rem;
+    --section-width: clamp(59rem, 60vw, 80rem);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -80,6 +84,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    z-index: 2;
 }
 
 .nav-link-container {
@@ -111,6 +116,18 @@ nav {
     max-width: 10%;
 }
 
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+.sections-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: var(--section-width);
+    grid-template-rows: repeat(3, fit-content);
+    justify-items: center;
+}
+
 section {
     padding: 4rem;
     display: flex;
@@ -119,39 +136,50 @@ section {
 
 .hero-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-template-rows: 2fr 4rem;
-    margin: 8rem 4rem 4rem;
-    width: clamp(40rem, 60vw, 60rem);
+    border: solid 2px var(--nav-link-color);
+    color: var(--hero-color);
+    grid-template-columns: 1fr repeat(5, 2fr);
+    grid-template-rows: 1fr 2fr 4rem 1fr;
+    margin-top: 4rem;
+    width: var(--section-width);
     text-align: center;
+    border-radius: var(--section-border-rad);
+    background-color: var(--hero-bg-color);
+    font-family: 'BloggerSansBold';
 }
 
+.hero-text-wrap {
+    grid-area: 2 / 2 / 4 / 5;
+    padding-top: 2rem;
+}
 .hero h1{
     font-size: 4rem;
     align-self: end;
     margin-bottom: 2rem;
-    grid-area: 1 / 1 / 2 / 3;
     white-space: nowrap;
+    /* font-family: 'TimeandSpaceRegular'; */
 }
 
 .hero img {
-    align-self: center;
+    position: relative;
+    left: 3rem;
+    bottom: 0;    
     max-width: 40%;
     min-width: 150px;
-    grid-area: 1 / 3 / 3 / 4;
+    grid-area: 2 / 5 / 5 / 7;
+    z-index: 1;
 }
 
 .hero p {
     align-self: start;
     font-size: 2rem;
     font-style: italic;
-    grid-area: 2 / 1 / 3 / 3;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .about-me {
     border: 2px solid var(--about-me-border-color);
-    border-radius: 7rem;
+    border-radius: 5rem;
     margin: 4rem 12rem;
 }
 .about-me-container {
@@ -272,3 +300,59 @@ a.anchor {
     line-height: 1.5;
 }
 
+
+section.call-to-act {
+    justify-content: center;
+}
+
+.call-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 4rem;
+    width: clamp(40rem, 60vw, 60rem);
+    text-align: center;
+}
+
+.call-to-act h1{
+    font-size: 2.5rem;
+    align-self: end;
+    margin-bottom: 2rem;
+    grid-area: 1 / 1 / 2 / 2;
+    white-space: nowrap;
+}
+
+.call-to-act img {
+    align-self: center;
+    max-width: 25%;
+    min-width: 100px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+section h2 {
+    font-size: 2rem;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.contact {
+    background-color: var(--about-me-bg-color);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem repeat(4, 1fr);
+    grid-auto-flow: column;
+    margin-left: 9rem;
+    gap: 1rem;
+}
+
+.contact-container p {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.contact-container a {
+    color: var(--link-color);
+}
